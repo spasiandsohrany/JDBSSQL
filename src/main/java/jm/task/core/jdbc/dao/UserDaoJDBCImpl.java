@@ -11,7 +11,7 @@ import java.util.List;
 import static java.sql.DriverManager.getConnection;
 
 public class UserDaoJDBCImpl extends Util implements UserDao {
-    Connection connection = getConnection();
+    private final Connection connection = getConnection();
     private Statement st;
     private PreparedStatement ps;
 

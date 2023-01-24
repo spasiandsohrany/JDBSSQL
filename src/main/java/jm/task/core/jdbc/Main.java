@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         UserService userService = new UserServiceImpl();
-        userService.createUsersTable();
         userService.dropUsersTable();
+        userService.createUsersTable();
     }
 }
